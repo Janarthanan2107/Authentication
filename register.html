@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <!-- fontAwesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Customized css -->
+    <link rel="stylesheet" href="./style/register.css" />
+  </head>
+
+  <body>
+    <!-- Contents needs to places here -->
+    <div class="form-container">
+      <form class="form" id="form">
+        <h2 class="form-title">Registration Form</h2>
+        <br />
+        <div class="form-control">
+          <label for="displayName">Username</label>
+          <input
+            type="text"
+            name="displayName"
+            id="username"
+            class="form-input"
+            placeholder="Enter your Username.."
+          />
+          <span class="msg">Username is mandatory !</span>
+        </div>
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-input"
+            placeholder="Enter your Email.."
+          />
+          <span class="msg">Email is mandatory !</span>
+        </div>
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="form-input"
+            placeholder="Enter your Password.."
+          />
+          <span class="msg">Password is mandatory !</span>
+        </div>
+        <div class="form-control">
+          <button type="submit" class="submit-btn" id="submit-btn">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <script type="module" src="/script/register.js"></script>
+    <script type="module" src="/script/firebase.js"></script>
+  </body>
+</html>

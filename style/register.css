@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+:root {
+    /* colors are changeable always more combinations are in "https://coolors.co/" */
+    --bright-pink-crayola: hsla(346, 84%, 61%, 1);
+    --sunglow: hsla(42, 100%, 70%, 1);
+    --emerald: hsla(164, 95%, 43%, 1);
+    --blue-ncs: hsla(195, 83%, 38%, 1);
+    --midnight-green: hsla(195, 83%, 16%, 1);
+    --white: rgb(255, 255, 255);
+    --clr-Transparent-Soft-violet: hsla(0, 0%, 0%, 0.5);
+
+    /* animation and some effects */
+    --transition: all 0.3s linear;
+    --spacing: 0.1rem;
+    --radius: 0.25rem;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+
+    /* font-fam*/
+    --body-font-family: 'Raleway', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+body {
+    font-family: var(--body-font-family);
+    text-decoration: var(--text-dec);
+    background-color: var(--Light-Grayish-Blue);
+    background-color: var(--midnight-green);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.form-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: var(--radius);
+    background-color: var(--white);
+}
+
+.form-title{
+    border-bottom: 2px solid var(--emerald);
+    padding-bottom: 1rem;
+    width: 80%;
+    margin: -0.5rem auto;
+}
+
+.form-control {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+}
+
+.form-control label {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.form-input {
+    padding: 10px;
+    width: 280px;
+    border: 1px solid gray;
+    border-radius: var(--radius);
+}
+
+.form-control.error .form-input{
+    border-color: red;
+}
+
+.form-control.success .form-input{
+    border-color: green;
+}
+
+.msg {
+    font-size: 10px;
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+    visibility: hidden;
+    font-weight: 500;
+}
+
+.form-control.error .msg{
+    visibility: visible;
+    color: red;
+}
+
+.form-control.success .msg{
+    color: green;
+}
+
+.submit-btn {
+    padding: 10px;
+    border-radius: var(--radius);
+    border: 1px solid gray;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    color: var(--white);
+    background-color: var(--blue-ncs);
+}
